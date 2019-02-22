@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Card Facture</title>
+	 <link rel="stylesheet" href="assets/css/material-pe.min.css"> 
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	
+	<div class="report_financial">
+		<!--		Información financiera-->
+		<div class="mode_facture">
+		<div class="reports">
+			<div class="business">
+				<img class="logo"  src="https://i.imgur.com/Z676PTh.png" alt="">
+				<div>
+					<span class="company">SkyRider S.A.</span>
+					<span class="statistica">
+						<p>Reports fast statistical <i class="date">(12/2019)</i> </p>
+					</span>
+				</div>
+			</div>
+			<div class="download">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><path id="a" d="M0 0h24v24H0V0z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" d="M20.55 5.22l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.15.55L3.46 5.22C3.17 5.57 3 6.01 3 6.5V19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.49-.17-.93-.45-1.28zM12 9.5l5.5 5.5H14v2h-4v-2H6.5L12 9.5zM5.12 5l.82-1h12l.93 1H5.12z"/></svg>
+				</a>
+			</div>
+		</div>
+		<div class="printing">
+			<ul>
+				<li><a class="active" href="">Financials</a></li>
+				<li><a class="" href="">Time entries</a></li>
+				<li><a class="" href="">Notes</a></li>
+				<li><a class="" href="">Recurring</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--	factura, productos y precios mas descuentos-->
+	<div class="content-facture">
+		<div class="card_facture">
+			<form class="top_form" action="">
+				<div class="select">
+					<div class="check1">
+						<input id="rTicket" type="checkbox" value="">
+						<label for=""> 
+						<span class="click_check active"></span>
+						
+						Ticket </label>
+					</div>
+					<div class="check2">
+						<input id="rTicket" type="checkbox" value="">
+						<label for=""> 
+						<span class="click_check"></span>
+						
+						Facture </label>
+					</div>
+				</div>
+				<select class="option_type" name="option_type" id="">
+					<option value="gasto" selected>+</option>
+					<option value="ingreso">-</option>
+				</select>
+				<input class="option_description" type="text" name="" id="">
+				<input class="option_value" type="number" name="" id="">
+				<br><br>
+				<a class="btn_add" href="#">+</a>
+			</form>
+			<br>
+
+			<div class="gastos_list"></div>
+			<br>
+			<div class="ingresos_list"></div>
+		</div>
+	</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

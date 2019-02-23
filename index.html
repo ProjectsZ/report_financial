@@ -13,7 +13,7 @@
 		<div class="mode_facture">
 		<div class="reports">
 			<div class="business">
-				<img class="logo"  src="https://i.imgur.com/Z676PTh.png" alt="">
+				<img class="logo"  src="img/skyrider.png" alt="">
 				<div>
 					<span class="company">SkyRider S.A.</span>
 					<span class="statistica">
@@ -41,7 +41,7 @@
 	<div class="content-facture">
 		<div class="card_facture">
 			<form class="top_form" action="">
-				<div class="select">
+				<div class="select_check">
 					<div class="check1">
 						<input id="rTicket" type="checkbox" value="">
 						<label for=""> 
@@ -57,20 +57,49 @@
 						Facture </label>
 					</div>
 				</div>
-				<select class="option_type" name="option_type" id="">
-					<option value="gasto" selected>+</option>
-					<option value="ingreso">-</option>
-				</select>
-				<input class="option_description" type="text" name="" id="">
-				<input class="option_value" type="number" name="" id="">
-				<br><br>
+				<div class="select_option">
+				    <span>Option</span>
+                    <select class="option_type" name="option_type" id="">
+                        <option value="gasto" selected>+</option>
+                        <option value="ingreso">-</option>
+                    </select>
+				</div>
+				<div class="txt_description">
+                    <span>description</span>
+				    <input class="option_description" type="text" name="" id="">
+				</div>
+				<div class="txt_value">
+                    <span>Prices</span>
+				    <input class="option_value" type="number" name="" id="">
+				</div>
 				<a class="btn_add" href="#">+</a>
 			</form>
-			<br>
-
-			<div class="gastos_list"></div>
-			<br>
-			<div class="ingresos_list"></div>
+			<div class="bottom_data">
+			    <table class="gastos_list">
+			        <tr>
+			            <th>#</th>
+			            <th>Description</th>
+			            <th>%</th>
+			            <th>Price</th>
+			            <th>State</th>
+			        </tr>
+			        
+			    </table>
+			    <table class="ingresos_list">
+			        <tr>
+			            <th>#</th>
+			            <th>Description</th>
+			            <th>%</th>
+			            <th>Price</th>
+			            <th>State</th>
+			        </tr>
+			        
+			    </table>
+			</div>
+			<div>
+			    
+			    
+			</div>
 		</div>
 	</div>
 	</div>

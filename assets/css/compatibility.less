@@ -1,0 +1,50 @@
+@rwd: {
+  mobile: 320px;
+  tablet: 768px;
+  desktop: 1024px;
+};
+
+
+/* border-radius */
+.border-radius(@radius){
+          border-radius: @radius;
+    -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+}
+.bdrs(@radius){ .border-radius(@radius) };
+
+
+/* box-shadow */
+.box-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
+  -webkit-box-shadow: @arguments;
+     -moz-box-shadow: @arguments;
+          box-shadow: @arguments;
+}
+.bxsh(@x: 0; @y: 0; @blur: 1px; @color: #000){ 
+    .box-shadow(@x; @y; @blur; @color) };
+
+
+/* border-image
+ *  previously add the property "border" (from see he border) in mode transparent 
+*/
+.border-image(@borderImage){
+    /* border: 2px solid transparent; */
+    -webkit-border-image: @borderImage;
+    -o-border-image: @borderImage;
+    border-image: @borderImage;
+}
+.bdi(@borderImage){ .border-image(@borderImage) };
+
+
+.font-family(@font){
+    font-family: @font,Helvetica,Arial,sans-serif;
+}
+.ff(@font){ .font-family(@font) }
+//
+//h1{
+//    background: red;
+//    .ff('roboto');
+//}
+//
+//h2{ font-size: 4.8em; }
+// 

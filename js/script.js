@@ -76,10 +76,30 @@ var UIController = (function(){
 
 				if(type === 'ingreso'){
 					element = DOMstrings.ingresoContainer;
-					html = '<div id="ingreso-%id%"> <div class="item_description">%description%</div><div class="right clearfix"><div class="item_value">%value%</div><div class="item_delete"><button class="item_delete-btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+					html = `<tr id="ingreso-%id%">
+                              <td>${ obj.id+1 }</td>
+                              <td class="item_description">%description% </td>
+                              <td> ... </td>
+                              <td class="item_value"> %value% </td>
+                              <td class="item_delete">
+                                <a class="item_delete-btn">
+                                        X
+                                </a>
+                              </td>
+                            </tr>`;
 				}else if( type === 'gasto' ){
 					element = DOMstrings.gastoContainer;
-					html = '<div id="gasto-%id%"><div class="item_description">%description%</div><div class="right clearfix"><div class="item_value">%value%</div><div class="item_percentage">21%</div><div class="item_delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+					html = `<tr id="gasto-%id%">
+                              <td>${ obj.id+1 }</td>
+                              <td class="item_description">%description%</td>
+                              <td class="item_percentage"> ... </td>
+                              <td class="item_value">%value%</td>
+                              <td class="item_delete">
+                                <a class="item_delete-btn">
+                                    X
+                                </a>
+                              </td>
+                            </tr>`;
 				}
 
 				// replace the placeholder text with some
